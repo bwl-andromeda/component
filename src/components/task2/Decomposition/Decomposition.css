@@ -1,0 +1,33 @@
+.banner {
+  margin-left: 140px;
+  margin-top: 30px;
+  max-width: 800px;
+
+  border: 1px solid grey;
+}
+
+.footer-card {
+  columns: 320px 3;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+  margin: 30px auto 0;
+  margin-left: 140px;
+  column-gap: 20px; /* расстояние между столбцами */
+  row-gap: 10px; /* расстояние между строками */
+}
+
+@media (max-width: 1060px) {
+  .banner {
+    margin-left: 0;
+  }
+  /* .footer-card {
+    margin-left: auto;
+  } */
+}
+
+@media (max-width: 640px) {
+  .footer-card {
+    columns: 320px 1;
+    margin-left: 40px;
+  }
+}

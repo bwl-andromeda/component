@@ -1,0 +1,101 @@
+.collapse {
+  width: auto;
+}
+
+.collapse-container {
+  position: relative;
+  width: 100%;
+  margin: 10px 8px 48px;
+  padding-bottom: 20px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  transition: height 0.6s ease-in-out;
+}
+
+.collapse-button {
+  padding: 7px 15px;
+  margin: 20px 20px 0px;
+  
+  font-family: inherit;
+  
+  border: 1px solid #001b726e;
+  border-radius: 6px;
+  
+  color: #f0f2f3;
+  background-color: #2255a7;
+  
+  cursor: pointer;
+}
+  
+.collapse-button:hover {
+  box-shadow: 0px 0px 10px 1px #193f7c;
+}
+  
+.collapse-button:active {
+  box-shadow: 0px 0px 15px 2px #071730;
+  background-color: #041125;
+}
+
+.collapse-content {
+  position: relative;
+  display: flex;
+  margin: 20px 20px 0px;
+
+  overflow: hidden;
+  
+  max-height: 0px;
+  /* transition: max-height 0.6s ease-in-out; */
+  transition: max-height 0.8s cubic-bezier(0, 1, 0, 1);
+}
+
+.collapse-content p {
+  padding: 15px;
+  border: 1px solid #808080;
+
+  white-space: pre-wrap;
+}
+
+.collapse-copy {
+  position: absolute;
+  bottom: -24px;
+  right: 14px;
+
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.collapse-copy:hover {
+  color: #071730;
+
+  transition: color 0.3s ease-in-out;
+}
+
+.collapse-copy:active {
+  color: red;
+  transform: scale(0.8);
+
+  transition: color 0.4s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.collapse-visible {
+  transition: max-height 1s;
+  max-height: 1000px;
+}
+
+/* .collapsed {
+  max-height: 0px;
+}
+
+.expanded {
+  max-height: auto;
+}
+ */
+
+.collapsed .collapse-copy {
+  font-size: 0;
+  bottom: 0;
+  right: 24px;
+}

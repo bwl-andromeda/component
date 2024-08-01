@@ -1,0 +1,42 @@
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
+  margin-left: 150px;
+}
+
+.news-block {
+  margin-top: 10px;
+  padding-left: 30px;
+}
+
+.news-header {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  font-size: 18px;
+  color: #6fa3dd;
+  font-weight: 600;
+}
+
+.header-date {
+  color: grey;
+  font-weight: 400;
+}
+
+.news-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: -30px;
+
+  gap: 5px;
+}
+
+@media (max-width: 1060px) {
+  .news {
+    margin-left: 0;
+  }
+}
